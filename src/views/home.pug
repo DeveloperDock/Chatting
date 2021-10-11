@@ -10,19 +10,23 @@ html(lang="ko")
         header 
             h1 Chatting
         main 
-            form#nickname
-                input(placeholder='Nickname', required, type='text')
+            //- form#nickname
+            //-     input(placeholder='Nickname', required, type='text')
+            //-     button Save
+
+            //- form#room
+            //-     input(placeholder="Room Name", required, type="text")
+            //-     button Enter Room
+
+            //- form#msg
+            //-     input(placeholder="message", required, type="text")
+            //-     button Send
+            ul
+
+            form
+                input(placeholder="Nickname", required, type="text")
                 button Save
 
-            form#room
-                input(placeholder="Room Name", required, type="text")
-                button Enter Room
-
-            ul#chat
-
-            form#msg
-                input(placeholder="message", required, type="text")
-                button Send
 
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js") 
