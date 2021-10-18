@@ -1,10 +1,13 @@
 {
+    "homepage": "https://DeveloperDock.github.io/Chatting/",
     "name": "chatting",
     "version": "1.0.0",
     "description": "",
     "license": "ISC",
     "scripts": {
-        "dev": "nodemon"
+        "dev": "nodemon",
+        "predeploy": "npm run dev",
+        "deploy": "gh-pages -d dev"
     },
     "devDependencies": {
         "@babel/cli": "^7.15.7",
@@ -16,6 +19,7 @@
     "dependencies": {
         "@socket.io/admin-ui": "^0.2.0",
         "express": "^4.17.1",
+        "gh-pages": "^3.2.3",
         "localtunnel": "^2.0.2",
         "pug": "^3.0.2",
         "socket.io": "^4.2.0",
