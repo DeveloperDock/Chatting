@@ -26,15 +26,14 @@ function addMsg(msg) {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     switch (i) {
-        case 0 /* 닉네임 입력 후 */:
-            handleSubmit('nickname', 'Room Name', 'Enter Room');
+        case 0:
+            handleSubmit('nickname', 'Room Name', 'Enter Room'); /* 닉네임 입력 후 */
             break;
-        case 1 /* 방 이름 입력 후 */:
-            handleSubmit('room', 'Message', 'Send');
+        case 1:
+            handleSubmit('room', 'Message', 'Send'); /* 방 이름 입력 후 */
             break;
         default:
-            /* 메시지 입력 */
-            handleSubmit('msg', 'Message', 'Send');
+            handleSubmit('msg', 'Message', 'Send'); /* 메시지 입력 */
             break;
     }
 });
