@@ -1,14 +1,13 @@
 {
-    "homepage": "https://developerdock.github.io/Chatting/",
     "name": "chatting",
     "version": "1.0.0",
+    "homepage": "https://developerdock.github.io/Chatting/",
     "description": "",
     "license": "ISC",
     "scripts": {
+        "start": "npm run dev",
         "dev": "nodemon",
-        "build": "nodemon",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "build": "nodemon"
     },
     "devDependencies": {
         "@babel/cli": "^7.15.7",
